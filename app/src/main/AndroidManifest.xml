@@ -12,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Buck">
         <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleMangaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
