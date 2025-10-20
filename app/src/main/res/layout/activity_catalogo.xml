@@ -7,4 +7,54 @@
     android:layout_height="match_parent"
     tools:context=".CatalogoActivity">
 
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="153dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="199dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
