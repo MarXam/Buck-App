@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="fondo">#0B132B</color>
-    <color name="texto_principal">#E0E0E6 </color>
-    <color name="titulo_buck">#2e92e2</color>
+    <color name="gray">#e0dfef</color>
+    <color name="white">#cbc0a6</color>
+    <color name="fondo">#21284e</color>
+    <color name="texto_principal">#bcb68e </color>
+    <color name="titulo_buck">#5a6e98</color>
 </resources>
