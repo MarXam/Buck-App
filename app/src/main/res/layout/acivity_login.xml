@@ -27,6 +27,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,10 +41,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="281dp" />
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -51,9 +50,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Contraseña"
-            android:inputType="textPassword"
-            tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="378dp" />
+            android:inputType="textPassword"/>
 
     </LinearLayout>
 
@@ -62,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log in"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="489dp" />
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="571dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
