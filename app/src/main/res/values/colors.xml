@@ -5,4 +5,5 @@
     <color name="fondo">#0B132B</color>
     <color name="texto_principal">#E0E0E6 </color>
     <color name="titulo_buck">#2e92e2</color>
+    <color name="texto_hint">#717887</color>
 </resources>
