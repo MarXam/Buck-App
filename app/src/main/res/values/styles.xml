@@ -11,5 +11,12 @@
         <item name="android:layout_marginHorizontal">7dp</item>
         <item name="android:layout_marginVertical">7dp</item>
     </style>
+    <!-- Estilo para Botón Gradiente -->
+    <style name="ButtonGradiente">
+        <item name="android:background">@drawable/button_gradiente</item>
+        <item name="android:textColor">#21284e</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
 
 </resources>
