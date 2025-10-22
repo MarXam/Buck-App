@@ -3,7 +3,7 @@
     <style name="Base.Theme.Buck" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/fondo</item>
         <item name="android:textColor">@color/texto_principal</item>
-        <item name="android:textSize">@dimen/texto_principal</item>
+        <item name="android:textSize">@dimen/texto</item>
     </style>
     <style name="Theme.Buck" parent="Base.Theme.Buck" />
 </resources>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Buck</string>
+    <string name="app_name_mayus">BUCK</string>
+    <string name="edLoginEmail">Email</string>
+    <string name="edLoginContraseña">Contraseña</string>
+    <string name="tvOlvideContraseña">Olvide mi contraseña</string>
+    <string name="btLogin">Iniciar sesion :3</string>
+    <string name="tvSinCuenta">¿No tienes una cuenta?</string>
+    <string name="tvRegistrate">Registrate!!!</string>
+    <string name="ivLogoBuck">Este es logo de buck :b</string>
+
+
+
 </resources>

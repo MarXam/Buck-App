@@ -9,98 +9,142 @@
     android:backgroundTintMode="add"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
+        android:id="@+id/linearLayoutTituloBuck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
-        android:text="BUCK"
-        android:textColor="@color/titulo_buck"
-        android:textSize="@dimen/texto_titulo_buck"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/ivLogoBuck"
+            android:src="@drawable/logo_buck"
+            />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/app_name_mayus"
+            android:textColor="@color/titulo_buck"
+            android:textSize="@dimen/texto_titulo_buck"
+            />
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayoutEditTextDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginHorizontal="10dp"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.1">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTituloBuck"
+        app:layout_constraintVertical_bias="0.20">
 
         <EditText
-            android:id="@+id/editTextText"
-            style="@style/HintLogin"
+            android:id="@+id/etLoginEmail"
+            style="@style/EditTextLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:drawableStart="@drawable/icon_correo"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:hint="@string/edLoginEmail"
+            android:inputType="textEmailAddress"
+            android:layout_marginVertical="10dp"
+            />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
-            style="@style/HintLogin"
+            android:id="@+id/etLoginContraseña"
+            style="@style/EditTextLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/icon_contrasena"
             android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:hint="@string/edLoginContraseña"
+            android:inputType="textPassword"
+            android:layout_marginVertical="10dp"
+            />
 
         <TextView
+            android:id="@+id/tvOlvideContraseña"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Olvide mi contraseña"
+            android:text="@string/tvOlvideContraseña"
+            android:textSize="@dimen/texto_subtitulo"
             android:gravity="end"
             android:layout_marginHorizontal="10dp"
+            />
 
     </LinearLayout>
 
 
     <LinearLayout
+        android:id="@+id/linearLayoutLogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginHorizontal="25dp"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
-        app:layout_constraintVertical_bias="0.30"
+        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEditTextDatos">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btLogIn"
+            style="@style/boton_basico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btLogin"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutEditTextDatos"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bottom_basico"
-            android:text="Log in"
-            app:backgroundTint="@null" />
+            android:orientation="vertical"
+            android:layout_marginVertical="25dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="10dp"
-            android:gravity="center"
-            android:text="No tienes cuenta"
+            <TextView
+                android:id="@+id/tvSinCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="@string/tvSinCuenta"
+                />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="10dp"
-            android:gravity="center"
-            android:text="Inicia sesion"
+            <TextView
+                android:id="@+id/tvRegistrate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/texto_subtitulo"
+                android:text="@string/tvRegistrate"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 
