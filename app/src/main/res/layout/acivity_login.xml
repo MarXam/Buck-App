@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutTituloBuck"
         app:layout_constraintVertical_bias="0.20"
-        tools:layout_editor_absoluteX="10dp">
+        >
 
         <EditText
             android:id="@+id/etLoginEmail"
@@ -110,11 +110,11 @@
         <Button
             android:id="@+id/btLogIn"
             style="@style/ButtomBotonBasico"
-            android:layout_width="316dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/btLogin"
-            android:textColor="@color/fondo"
+            android:textColor="@color/texto_boton_basico"
             app:layout_constraintTop_toBottomOf="@id/linearLayoutEditTextDatos" />
 
         <LinearLayout

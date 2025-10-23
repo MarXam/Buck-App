@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Colores provisionales-->
     <color name="gray">#5a6e98</color>
     <color name="grayclaro">#92BCEA</color>
     <color name="perla">#F5F5DC</color>
     <color name="white">#e0dfef</color>
     <color name="black">#000000</color>
     <color name="azulneon">#00f5f9</color>
+
+    <!--Colores de fondo-->
     <color name="fondo">#21284e</color>
+
+    <!--Colores de texto-->
     <color name="texto_principal">#bcb68e </color>
     <color name="titulo_buck">#cbc0a6</color>
+    <color name="texto_boton_basico">#21284e</color>
+
+    <!--Colores de botones-->
+    <color name="bottom_basico">#bcb68e </color>
+
 </resources>
