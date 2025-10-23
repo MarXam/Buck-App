@@ -19,7 +19,7 @@
         <item name="android:layout_marginVertical">5dp</item>
     </style>
 
-    <style name="boton_basico">
+    <style name="ButtomBotonBasico">
         <item name="android:background">@drawable/bottom_basico</item>
         <item name="backgroundTint">@null</item>
     </style>
@@ -31,66 +31,5 @@
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
-    <style name="boton_conborde">
-        <item name="android:background">@drawable/button_border</item>
-        <item name="android:textColor">#5a6e98</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">serif</item>
-    </style>
-    <style name="boton_minimal">
-        <item name="android:background">@drawable/button_minimal</item>
-        <item name="android:textColor">#bcb68e</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">monospace</item>
-    </style>
-    <style name="boton_round">
-        <item name="android:background">@drawable/button_round</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:layout_width">80dp</item>
-        <item name="android:layout_height">80dp</item>
-    </style>
-    <style name="boton_shadow">
-        <item name="android:background">@drawable/button_shadow_gradient</item>
-        <item name="android:textColor">#e0dfef</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">serif</item>
-    </style>
-    <style name="boton_dobleborde">
-        <item name="android:background">@drawable/button_double_border</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">monospace</item>
-    </style>
-    <style name="boton_ovaladoinvertido">
-        <item name="android:background">@drawable/button_oval_inverted</item>
-        <item name="android:textColor">#5a6e98</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">sans-serif-condensed</item>
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">50dp</item>
-    </style>
-    <style name="boton_ripple">
-        <item name="android:background">@drawable/button_ripple_sim</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-    <style name="boton_textodegradado">
-        <item name="android:background">@drawable/button_text_gradient</item>
-        <item name="android:textColor">#5a6e98</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">serif</item>
-    </style>
 
-    <drawable name="bottom_gradiente">boton gradiente</drawable>
-    <drawable name="button_border">boton_conborde</drawable>
-    <drawable name="button_minimal">boton_minimal</drawable>
-    <drawable name="button_round">boton_round</drawable>
-    <drawable name="button_shadow_gradient">boton shadow</drawable>
-    <drawable name="button_double_border">boton_dobleborde</drawable>
-    <drawable name="button_oval_inverted">boton_ovaladoinvertido</drawable>
-    <drawable name="button_ripple_sim">boton_ripple</drawable>
-    <drawable name="button_text_gradient">boton_textodegradado</drawable>
 </resources>

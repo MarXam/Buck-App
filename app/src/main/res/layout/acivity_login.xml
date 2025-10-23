@@ -110,7 +110,7 @@
 
         <Button
             android:id="@+id/btLogIn"
-            style="@style/boton_basico"
+            style="@style/ButtomBotonBasico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btLogin"

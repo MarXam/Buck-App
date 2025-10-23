@@ -32,7 +32,7 @@
 
         <Button
             android:id="@+id/button7"
-            style="@style/boton_basico"
+            style="@style/ButtomBotonBasico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buscar" />
@@ -40,22 +40,13 @@
     </LinearLayout>
 
 
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="125dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="196dp" />
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="94dp" />
 
     <TextView
         android:id="@+id/textView5"
