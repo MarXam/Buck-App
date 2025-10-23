@@ -25,11 +25,11 @@
     </style>
 
     <style name="boton_gradiente">
-        <item name="android:background">@drawable/bottom_gradiente</item>
-        <item name="backgroundTint">@null</item>
-        <item name="android:textColor">#bcb68e</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
+         <!--<item name="android:background">@drawable/bottom_gradiente</item>-->
+         <item name="backgroundTint">@null</item>
+         <item name="android:textColor">#bcb68e</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:fontFamily">sans-serif-medium</item>
+     </style>
 
-</resources>
+ </resources>

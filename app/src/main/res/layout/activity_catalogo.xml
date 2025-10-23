@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/button11"
-        style="@style/boton_minimal"
+        style="@style/boton_gradiente"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="19dp"
