@@ -54,43 +54,42 @@
         android:paddingVertical="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutTituloBuck"
-        app:layout_constraintVertical_bias="0.20">
+        app:layout_constraintVertical_bias="0.20"
+        tools:layout_editor_absoluteX="10dp">
 
         <EditText
             android:id="@+id/etLoginEmail"
             style="@style/EditTextLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:autofillHints="emailAddress"
             android:drawableStart="@drawable/icon_correo"
             android:ems="10"
             android:hint="@string/edLoginEmail"
-            android:inputType="textEmailAddress"
-            android:layout_marginVertical="10dp"
-            />
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/etLoginContraseña"
             style="@style/EditTextLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:autofillHints="password"
             android:drawableStart="@drawable/icon_contrasena"
             android:ems="10"
             android:hint="@string/edLoginContraseña"
-            android:inputType="textPassword"
-            android:layout_marginVertical="10dp"
-            />
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/tvOlvideContraseña"
+            android:textColor="@color/perla"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/tvOlvideContraseña"
-            android:textSize="@dimen/texto_subtitulo"
-            android:gravity="end"
             android:layout_marginHorizontal="10dp"
-            />
+            android:gravity="end"
+            android:text="@string/tvOlvideContraseña"
+            android:textSize="@dimen/texto_subtitulo" />
 
     </LinearLayout>
 
@@ -111,13 +110,12 @@
         <Button
             android:id="@+id/btLogIn"
             style="@style/ButtomBotonBasico"
-            android:layout_width="match_parent"
+            android:layout_width="316dp"
             android:layout_height="wrap_content"
-            android:text="@string/btLogin"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/linearLayoutEditTextDatos"
             android:layout_marginTop="20dp"
-            />
+            android:text="@string/btLogin"
+            android:textColor="@color/fondo"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutEditTextDatos" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -127,6 +125,7 @@
 
             <TextView
                 android:id="@+id/tvSinCuenta"
+                android:textColor="@color/perla"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
@@ -136,6 +135,7 @@
 
             <TextView
                 android:id="@+id/tvRegistrate"
+                android:textColor="@color/perla"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
@@ -147,5 +147,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
