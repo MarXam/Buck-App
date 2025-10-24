@@ -5,18 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/texto_principal"
     tools:context=".PerfilActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/seguidos"
-        app:layout_constraintEnd_toEndOf="@+id/usuario"
-        app:layout_constraintStart_toStartOf="@+id/usuario"
-        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="90dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -24,98 +20,72 @@
         style="@style/EditTextbienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="6dp"
         android:text="Nombre de usuario"
         android:textColor="@color/azul"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/bienvenida"
-        app:layout_constraintTop_toBottomOf="@+id/bienvenida" />
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="25dp" />
 
     <Button
         android:id="@+id/seguidos"
         style="@style/boton_gradiente"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="23dp"
+        android:layout_width="207dp"
+        android:layout_height="43dp"
         android:text="Seguidos"
-        android:textColor="@color/titulo_buck"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/historial"
-        app:layout_constraintEnd_toEndOf="@+id/historial"
-        app:layout_constraintStart_toStartOf="@+id/historial"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:textColor="@color/perla"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="240dp" />
 
     <Button
         android:id="@+id/cerrarseccion"
         style="@style/boton_cerrar"
-        android:layout_width="205dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="177dp"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
         android:text="Cerrar sesion"
         android:textColor="@color/perla"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ajustes" />
+        android:textSize="22dp"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="521dp" />
 
     <Button
         android:id="@+id/ajustes"
         style="@style/boton_gradiente"
-        android:layout_width="194dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="58dp"
+        android:layout_width="191dp"
+        android:layout_height="42dp"
         android:text="Ajustes"
         android:textColor="@color/titulo_buck"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/cerrarseccion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/historial" />
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="375dp" />
 
     <Button
         android:id="@+id/historial"
         style="@style/boton_gradiente"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="27dp"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
         android:text="Historial"
         android:textColor="@color/titulo_buck"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/ajustes"
-        app:layout_constraintEnd_toEndOf="@+id/ajustes"
-        app:layout_constraintStart_toStartOf="@+id/ajustes"
-        app:layout_constraintTop_toBottomOf="@+id/seguidos" />
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="306dp" />
 
     <TextView
         android:id="@+id/bienvenida"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="4dp"
         android:gravity="center"
         android:text="Bienvenido"
-        android:textColor="@color/fondo"
-        android:textSize="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/usuario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/perla"
+        android:textSize="20dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnBarraMenu"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:background="@color/texto_principal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cerrarseccion"
         app:menu="@menu/barra_busqueda"
-        tools:ignore="VisualLintBottomNav" />
+        tools:ignore="VisualLintBottomNav"
+        tools:layout_editor_absoluteY="651dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
