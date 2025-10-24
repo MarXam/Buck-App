@@ -20,10 +20,9 @@ public class PerfilActivity extends AppCompatActivity {
         String usuario = getIntent().getStringExtra("usuario");
         TextView tvUsuario = findViewById(R.id.usuario);
         if (usuario != null) {
-            tvUsuario.setText("Usuario: " + usuario);  // Muestra el email
+            tvUsuario.setText("Usuario: " + usuario);
         } else {
-            tvUsuario.setText("Usuario: Invitado");  // Default si no hay dato
-        }
+            tvUsuario.setText("Usuario: Invitado");
         Button btnSeguidos = findViewById(R.id.seguidos);
         Button btnHistorial = findViewById(R.id.historial);
         Button btnAjustes = findViewById(R.id.ajustes);
@@ -32,7 +31,7 @@ public class PerfilActivity extends AppCompatActivity {
         btnSeguidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PerfilActivity.this, SeguidosActivity.class);
+                Intent intent = new Intent(PerfilActivity.this, seguidosactivity.class);
                 startActivity(intent);
             }
         });
