@@ -27,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
         // Crear y llenar lista
         ListaManga = new ArrayList<>();
         ListaManga.add(new Manga("Nana", "Hola", R.drawable.nana));
-        ListaManga.add(new Manga("Beserk", "Piratas buscando el One Piece", R.drawable.berserk));
+        ListaManga.add(new Manga("Beserk", "Piratas buscando el One Piece", R.drawable.my_hero_academia));
         ListaManga.add(new Manga("DanDaDan", "Humanos luchando contra titanes", R.drawable.dandadan));
+        ListaManga.add(new Manga("Nana", "Hola", R.drawable.nana));
+        ListaManga.add(new Manga("Beserk", "Piratas buscando el One Piece", R.drawable.yu_hi_oh));
+        ListaManga.add(new Manga("DanDaDan", "Humanos luchando contra titanes", R.drawable.kimetsu_no_yaiba));
 
         // Configurar adaptador
         adaptadorMangaRv = new AdaptadorMangaRv(ListaManga);
