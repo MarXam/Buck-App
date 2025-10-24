@@ -26,7 +26,8 @@ public class LoginActivity extends AppCompatActivity {
                 String password = Contraseña.getText().toString().trim();
 
                     if (email.equals("usuario@gmail.com") && password.equals("123456")) {
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, PerfilActivity.class)
+                        intent.putExtra("usuario", email);
                         startActivity(intent);
                         finish();
                     } else {

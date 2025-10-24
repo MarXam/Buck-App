@@ -5,61 +5,81 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/texto_principal"
     tools:context=".PerfilActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="85dp"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="149dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/usuario"
+        style="@style/EditTextbienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre de usuario"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="260dp" />
+        android:textColor="@color/azul"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="79dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/seguidos"
+        style="@style/boton_gradiente"
+        android:textSize="25dp"
+        android:layout_width="192dp"
+        android:layout_height="54dp"
         android:text="Seguidos"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="313dp" />
+        android:textColor="@color/titulo_buck"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="299dp" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Historial"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="390dp" />
+        android:id="@+id/cerrarseccion"
+        style="@style/boton_cerrar"
+        android:textSize="25dp"
+        android:layout_width="205dp"
+        android:layout_height="57dp"
+        android:text="Cerrar sesion"
+        android:textColor="@color/perla"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="576dp" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ajustes"
+        style="@style/boton_gradiente"
+        android:textSize="25dp"
+        android:layout_width="194dp"
+        android:layout_height="56dp"
         android:text="Ajustes"
-        tools:layout_editor_absoluteX="60dp"
+        android:textColor="@color/titulo_buck"
+        tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="462dp" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cerrar sesion"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="532dp" />
+        android:id="@+id/historial"
+        style="@style/boton_gradiente"
+        android:layout_width="190dp"
+        android:layout_height="58dp"
+        android:text="Historial"
+        android:textColor="@color/titulo_buck"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="377dp" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Perfil"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="20dp" />
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="352dp"
+        android:layout_height="63dp"
+        android:text="Bienvenido"
+        android:textColor="@color/fondo"
+        android:textSize="32dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
