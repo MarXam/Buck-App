@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         adaptadorMangaRv = new AdaptadorMangaRv(ListaManga);
         VistaManga.setAdapter(adaptadorMangaRv);
 
+        BarraNavegacionHelper.setup(this, R.id.bmHome);
 
     }
 }
