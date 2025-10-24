@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Colores provisionales-->
-    <color name="gray">#5a6e98</color>
+    <color name="gray">#5a6e98</color>#0051b6
+    <color name="azul">#0051b6</color>
     <color name="grayclaro">#92BCEA</color>
     <color name="perla">#F5F5DC</color>
     <color name="white">#e0dfef</color>
