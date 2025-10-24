@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.acivity_login);
 
             EditText Email = findViewById(R.id.etLoginEmail);
-            EditText Contraseña = findViewById(R.id.etLoginContraseña);
+            EditText Contrasena = findViewById(R.id.etLoginContraseña);
             Button btnLoginXml = findViewById(R.id.btLogIn);
 
             btnLoginXml.setOnClickListener(new View.OnClickListener() {
@@ -23,17 +23,35 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String email = Email.getText().toString().trim();
-                String password = Contraseña.getText().toString().trim();
+                String contrasena = Contrasena.getText().toString().trim();
 
-                    if (email.equals("usuario@gmail.com") && password.equals("123456")) {
-                        Intent intent = new Intent(LoginActivity.this, PerfilActivity.class)
+                    if (contrasena.isEmpty() && email.isEmpty()){
+                        Toast.makeText(LoginActivity.this, "Debes ingresar un usuario y contraseña", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (email.isEmpty()){
+                        Toast.makeText(LoginActivity.this, "Debes ingresar un usuario", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (contrasena.isEmpty()){
+                        Toast.makeText(LoginActivity.this, "Debes ingresar uns contraseña", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (email.equals("a") && contrasena.equals("1")) {
+                        Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         intent.putExtra("usuario", email);
                         startActivity(intent);
+
                         finish();
                     } else {
-                        Toast.makeText(LoginActivity.this, "Email o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Email o contraseña incorrectos", Toast.LENGTH_SHORT).show();return;
                     }
-            }
-        });
+                }
+        }   );
     }
 }

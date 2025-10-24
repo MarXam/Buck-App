@@ -4,8 +4,9 @@
     <style name="EditTextLogin">
         <item name="android:background">@drawable/edit_text_login</item>
         <item name="android:drawablePadding">10dp</item>
-        <item name="android:paddingHorizontal">10dp</item>
-        <item name="android:paddingVertical">10dp</item>
+        <item name="android:textColorHint">@color/texto_edit_text_login</item>"
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">20dp</item>
         <item name="android:layout_marginHorizontal">5dp</item>
         <item name="android:layout_marginVertical">5dp</item>
     </style>

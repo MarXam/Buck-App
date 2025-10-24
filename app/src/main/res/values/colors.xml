@@ -16,6 +16,7 @@
     <color name="texto_principal">#bcb68e </color>
     <color name="titulo_buck">#cbc0a6</color>
     <color name="texto_boton_basico">#21284e</color>
+    <color name="texto_edit_text_login">#D7CCC8</color>
 
     <!--Colores de botones-->
     <color name="bottom_basico">#bcb68e </color>

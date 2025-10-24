@@ -5,8 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#958080"
-    android:backgroundTintMode="add"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -67,7 +65,8 @@
             android:drawableStart="@drawable/icon_correo"
             android:ems="10"
             android:hint="@string/edLoginEmail"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            />
 
         <EditText
             android:id="@+id/etLoginContraseña"

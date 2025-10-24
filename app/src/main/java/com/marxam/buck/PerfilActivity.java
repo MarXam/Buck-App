@@ -62,6 +62,9 @@ public class PerfilActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        BarraNavegacionHelper.setup(this, R.id.bmPerfil);
+
     }
 }
 
