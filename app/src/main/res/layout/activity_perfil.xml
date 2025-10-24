@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="6dp"
         android:text="Nombre de usuario"
         android:textColor="@color/azul"
         android:textSize="30dp"
@@ -38,13 +38,12 @@
         style="@style/boton_gradiente"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="23dp"
         android:text="Seguidos"
         android:textColor="@color/titulo_buck"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/historial"
-        app:layout_constraintEnd_toEndOf="@+id/ajustes"
+        app:layout_constraintEnd_toEndOf="@+id/historial"
         app:layout_constraintStart_toStartOf="@+id/historial"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -53,11 +52,11 @@
         style="@style/boton_cerrar"
         android:layout_width="205dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="258dp"
+        android:layout_marginBottom="177dp"
         android:text="Cerrar sesion"
         android:textColor="@color/perla"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ajustes" />
@@ -65,17 +64,15 @@
     <Button
         android:id="@+id/ajustes"
         style="@style/boton_gradiente"
-        android:layout_width="0dp"
+        android:layout_width="194dp"
         android:layout_height="0dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="58dp"
         android:text="Ajustes"
         android:textColor="@color/titulo_buck"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/cerrarseccion"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/bienvenida"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/historial" />
 
     <Button
@@ -99,6 +96,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
         android:text="Bienvenido"
         android:textColor="@color/fondo"
@@ -107,5 +105,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnBarraMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/texto_principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cerrarseccion"
+        app:menu="@menu/barra_busqueda"
+        tools:ignore="VisualLintBottomNav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/bottom_basico"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginHorizontal="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView56"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
     
@@ -60,7 +60,7 @@
         android:textColor="@color/titulo_buck"
         android:textSize="@dimen/texto"
         android:layout_marginTop="20dp"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -86,6 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/barra_busqueda"
+        android:background="@color/texto_principal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rvVistaManga"
         tools:ignore="VisualLintBottomNav" />

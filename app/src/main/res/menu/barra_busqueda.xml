@@ -2,10 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bmHome"
+        android:icon="@drawable/icon_manga"
+        android:title="Manga"/>
+    <item
+        android:id="@+id/bmBuscar"
         android:icon="@drawable/icon_lupa"
-        android:title="Home"/>
+        android:title="Buscar"/>
     <item
         android:id="@+id/bmPerfil"
-        android:icon="@drawable/icon_lupa"
+        android:icon="@drawable/icon_person"
         android:title="Perfil"/>
 </menu>

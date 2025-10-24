@@ -32,7 +32,7 @@ public class PerfilActivity extends AppCompatActivity {
         btnSeguidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PerfilActivity.this, seguidosactivity.class);
+                Intent intent = new Intent(PerfilActivity.this, SeguidosActivity.class);
                 startActivity(intent);
             }
         });
