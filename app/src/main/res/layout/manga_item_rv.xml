@@ -2,36 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
-    android:padding="8dp">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/ivMangaImg"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:layout_marginEnd="8dp" />
+        android:src="@drawable/logo_buck"
+        android:contentDescription="@string/app_name" />
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvMangaNombre"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tvMangaNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Nombre Manga" />
-
-        <TextView
-            android:id="@+id/tvMangaDescripcion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#666"
-            android:text="Descripción" />
-    </LinearLayout>
-
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:maxWidth="130dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="El increíble y larguísimo nombre del manga"
+        android:textColor="@color/titulo_buck"
+        android:textSize="@dimen/texto_subtitulo"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingHorizontal="5dp"
+        />
 </LinearLayout>

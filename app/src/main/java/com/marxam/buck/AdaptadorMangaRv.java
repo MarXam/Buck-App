@@ -27,7 +27,7 @@ public class AdaptadorMangaRv extends RecyclerView.Adapter<AdaptadorMangaRv.View
             super(itemView);
             ImagenManga = itemView.findViewById(R.id.ivMangaImg);
             NombreManga = itemView.findViewById(R.id.tvMangaNombre);
-            DescripcionManga = itemView.findViewById(R.id.tvMangaDescripcion);
+            //DescripcionManga = itemView.findViewById(R.id.tvMangaDescripcion);
         }
     }
 
@@ -42,7 +42,7 @@ public class AdaptadorMangaRv extends RecyclerView.Adapter<AdaptadorMangaRv.View
     public void onBindViewHolder(@NonNull AdaptadorMangaRv.ViewHolder holder, int position) {
         Manga manga = ListaManga.get(position);
         holder.NombreManga.setText(manga.getNombre());
-        holder.DescripcionManga.setText(manga.getDescripcion());
+        //holder.DescripcionManga.setText(manga.getDescripcion());
         holder.ImagenManga.setImageResource(manga.getImagenManga());
     }
 
