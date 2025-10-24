@@ -15,8 +15,11 @@ public class AdaptadorMangaRv extends RecyclerView.Adapter<AdaptadorMangaRv.View
 
     private ArrayList<Manga> ListaManga;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public AdaptadorMangaRv(ArrayList<Manga> listaManga) {
+        this.ListaManga = listaManga;
+    }
 
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ImagenManga;
         TextView NombreManga, DescripcionManga;
 
@@ -28,28 +31,23 @@ public class AdaptadorMangaRv extends RecyclerView.Adapter<AdaptadorMangaRv.View
         }
     }
 
-    public AdaptadorMangaRv(ArrayList<Manga> listaManga) {
-        this.ListaManga = listaManga;
-    }
-
+    @Override
     public AdaptadorMangaRv.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.manga_item_rv, parent, false);
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.manga_item_rv, parent, false);
         return new ViewHolder(view);
-
     }
 
+    @Override
     public void onBindViewHolder(@NonNull AdaptadorMangaRv.ViewHolder holder, int position) {
-
         Manga manga = ListaManga.get(position);
         holder.NombreManga.setText(manga.getNombre());
         holder.DescripcionManga.setText(manga.getDescripcion());
         holder.ImagenManga.setImageResource(manga.getImagenManga());
-
     }
 
+    @Override
     public int getItemCount() {
         return ListaManga.size();
     }
-
 }
