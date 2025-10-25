@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutTitulo"
-        app:layout_constraintBottom_toTopOf="@id/rvVistaManga">
+        app:layout_constraintBottom_toTopOf="@id/vSeparadorTitutloSubtitulo2">
 
         <ImageView
             android:id="@+id/imgPerfil"
@@ -105,19 +105,52 @@
         android:layout_height="3dp"
         android:layout_marginHorizontal="30dp"
         android:background="@color/bottom_basico"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="512dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPerfil"
+        android:layout_marginTop="10dp"
+        />
 
-    <Button
-        android:id="@+id/seguidos"
-        style="@style/boton_gradiente"
-        android:layout_width="207dp"
-        android:layout_height="49dp"
-        android:text="Seguidos"
-        android:textColor="@color/titulo_buck"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="230dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cerrarseccion"
+        app:layout_constraintTop_toBottomOf="@+id/vSeparadorTitutloSubtitulo2"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <Button
+            android:id="@+id/seguidos"
+            style="@style/boton_gradiente"
+            android:layout_width="207dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:text="Seguidos"
+            android:textColor="@color/titulo_buck"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/historial"
+            style="@style/boton_gradiente"
+            android:layout_width="206dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:text="Historial"
+            android:textColor="@color/titulo_buck"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ajustes"
+            style="@style/boton_gradiente"
+            android:layout_width="205dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:text="Ajustes"
+            android:textColor="@color/titulo_buck"
+            android:textSize="20dp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/cerrarseccion"
@@ -126,39 +159,18 @@
         android:layout_height="49dp"
         android:text="Cerrar sesion"
         android:textColor="@color/perla"
-        android:textSize="22dp"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="546dp" />
-
-    <Button
-        android:id="@+id/ajustes"
-        style="@style/boton_gradiente"
-        android:layout_width="205dp"
-        android:layout_height="46dp"
-        android:text="Ajustes"
-        android:textColor="@color/titulo_buck"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="421dp" />
-
-    <Button
-        android:id="@+id/historial"
-        style="@style/boton_gradiente"
-        android:layout_width="206dp"
-        android:layout_height="46dp"
-        android:text="Historial"
-        android:textColor="@color/titulo_buck"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
+        android:layout_marginBottom="50dp"
+        tools:layout_editor_absoluteX="97dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnBarraMenu"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/texto_principal"
         app:menu="@menu/barra_busqueda"
-        tools:ignore="VisualLintBottomNav"
-        tools:layout_editor_absoluteY="651dp" />
+        android:background="@color/fonfoBarraNavegacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvVistaManga"
+        tools:ignore="VisualLintBottomNav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

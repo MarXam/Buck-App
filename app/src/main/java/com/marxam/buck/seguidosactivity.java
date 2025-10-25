@@ -22,4 +22,6 @@ public class seguidosactivity extends AppCompatActivity {
             public void onClick(View v) {
                 finish();
             }
-        }
+        });
+    }
+}
