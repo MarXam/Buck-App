@@ -16,6 +16,7 @@
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="38dp" />
 
+
     <Button
         android:id="@+id/btnVolverSeguidos"
         style="@style/boton_gradiente"
@@ -24,54 +25,56 @@
         android:text="Volver al Perfil"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="581dp" />
+        tools:layout_editor_absoluteY="710dp" />
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="123dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/nana"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="123dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dandadan"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="274dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/kimetsu_no_yaiba"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="287dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="274dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ruroni_kenshin"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="287dp" />
+
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="421dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tokyo_ghoul"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="482dp" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="421dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="155dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/yu_hi_oh"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="482dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
