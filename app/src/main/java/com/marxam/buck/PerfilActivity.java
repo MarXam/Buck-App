@@ -31,33 +31,33 @@ public class PerfilActivity extends AppCompatActivity {
             btnSeguidos.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(PerfilActivity.this, seguidosactivity.class);
-                    startActivity(intent);
+                    Intent iSeguidos = new Intent(PerfilActivity.this, seguidosactivity.class);
+                    startActivity(iSeguidos);
                 }
             });
 
             btnHistorial.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(PerfilActivity.this, historialactivity.class);
-                    startActivity(intent);
+                    Intent iHistorial = new Intent(PerfilActivity.this, historialactivity.class);
+                    startActivity(iHistorial);
                 }
             });
 
             btnAjustes.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(PerfilActivity.this, ajustesactivity.class);
-                    startActivity(intent);
+                    Intent iAjustes = new Intent(PerfilActivity.this, ajustesactivity.class);
+                    startActivity(iAjustes);
                 }
             });
             btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(PerfilActivity.this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(PerfilActivity.this, LoginActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
+                    Intent iLoginActivity = new Intent(PerfilActivity.this, LoginActivity.class);
+                    iLoginActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(iLoginActivity);
                     finish();
                 }
             });
