@@ -114,7 +114,7 @@
         android:layout_width="207dp"
         android:layout_height="49dp"
         android:text="Seguidos"
-        android:textColor="@color/perla"
+        android:textColor="@color/titulo_buck"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="199dp" />

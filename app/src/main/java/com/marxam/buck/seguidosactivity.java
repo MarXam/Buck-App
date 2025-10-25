@@ -22,22 +22,4 @@ public class seguidosactivity extends AppCompatActivity {
             public void onClick(View v) {
                 finish();
             }
-        });
-
-        imageView1 = findViewById(R.id.imageView1);
-        imageView2 = findViewById(R.id.imageView2);
-        imageView3 = findViewById(R.id.imageView3);
-        imageView4 = findViewById(R.id.imageView4);
-        imageView5 = findViewById(R.id.imageView5);
-        imageView6 = findViewById(R.id.imageView6);
-
-
-        imageView1.setImageResource(R.drawable.caballeros_del_zodiaco);
-        imageView2.setImageResource(R.drawable.dandadan);
-        imageView3.setImageResource(R.drawable.dr_stone);
-        imageView4.setImageResource(R.drawable.jujutsu_kaisen);
-        imageView5.setImageResource(R.drawable.kimetsu_no_yaiba);
-        imageView6.setImageResource(R.drawable.my_hero_academia);
-    }
-}
-   
+        }
