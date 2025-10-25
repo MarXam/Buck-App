@@ -52,7 +52,7 @@ public class PerfilActivity extends AppCompatActivity {
             Toast.makeText(PerfilActivity.this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
             Intent iloginactivity = new Intent(PerfilActivity.this, LoginActivity.class);
             iloginactivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(iloginactivity;
+            startActivity(iloginactivity);
             finish();
         });
 

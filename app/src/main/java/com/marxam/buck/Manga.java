@@ -15,11 +15,9 @@ public class Manga {
     public String getNombre() {
         return Nombre;
     }
-
     public String getDescripcion() {
         return Descripcion;
     }
-
     public int getImagenManga() {
         return ImagenManga;
     }

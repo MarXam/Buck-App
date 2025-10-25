@@ -50,11 +50,11 @@
         android:layout_height="3dp"
         android:background="@color/bottom_basico"
         android:layout_marginHorizontal="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvTendencias"
+        app:layout_constraintBottom_toTopOf="@+id/tvPerfil"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutTitulo" />
     
     <TextView
-        android:id="@+id/tvTendencias"
+        android:id="@+id/tvPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tvTendencias"
@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTendencias"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil"
         tools:listitem="@layout/manga_item_rv"
         tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         tools:spanCount="2"/>

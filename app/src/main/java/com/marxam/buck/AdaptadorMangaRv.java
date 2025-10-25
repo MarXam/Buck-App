@@ -12,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class AdaptadorMangaRv extends RecyclerView.Adapter<AdaptadorMangaRv.ViewHolder> {
-
     private ArrayList<Manga> ListaManga;
-
     public AdaptadorMangaRv(ArrayList<Manga> listaManga) {
         this.ListaManga = listaManga;
     }

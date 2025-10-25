@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         VistaManga = findViewById(R.id.rvVistaManga);
         VistaManga.setLayoutManager(new GridLayoutManager(this, 2));
 
-        // Crear y llenar lista
         ListaManga = new ArrayList<>();
         ListaManga.add(new Manga("Berserk", "Un oscuro relato de venganza, poder y destino.", R.drawable.berserk_));
         ListaManga.add(new Manga("Caballeros del Zodiaco", "Guerreros sagrados que luchan por la diosa Atenea usando su cosmos.", R.drawable.caballeros_del_zodiaco));
@@ -41,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
         ListaManga.add(new Manga("Tokyo Ghoul", "Un joven mitad humano mitad ghoul lucha por encontrar su lugar entre dos mundos.", R.drawable.tokyo_ghoul));
         ListaManga.add(new Manga("Yu-Gi-Oh", "Cartas, duelo y la historia de un joven que descubre un antiguo juego con poderes misteriosos.", R.drawable.yu_hi_oh));
 
-
-        // Configurar adaptador
         adaptadorMangaRv = new AdaptadorMangaRv(ListaManga);
         VistaManga.setAdapter(adaptadorMangaRv);
 
