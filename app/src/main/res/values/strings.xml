@@ -9,6 +9,7 @@
     <string name="tvRegistrate">¡¡¡Registrate!!!</string>
     <string name="ivLogoBuck">Este es logo de buck :b</string>
     <string name="tvTendencias">Tendencias</string>
+    <string name="etItemRecyclerView">El increíble y larguísimo nombre del manga</string>
 
 
 </resources>

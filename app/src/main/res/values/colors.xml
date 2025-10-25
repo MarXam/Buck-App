@@ -11,6 +11,7 @@
 
     <!--Colores de fondo-->
     <color name="fondo">#21284e</color>
+    <color name="fonfoBarraNavegacion">#bcb68e</color>
 
     <!--Colores de texto-->
     <color name="texto_principal">#bcb68e </color>
