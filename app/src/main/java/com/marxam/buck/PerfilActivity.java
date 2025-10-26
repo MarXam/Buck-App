@@ -18,13 +18,11 @@ public class PerfilActivity extends AppCompatActivity {
 
         String usuario = getIntent().getStringExtra("usuario");
 
-        TextView tvUsuario = findViewById(R.id.Usuario);
-
-        if (usuario != null) {
-            tvUsuario.setText("Usuario: " + usuario);
-        } else {
-            tvUsuario.setText("Usuario: Invitado");
-        }
+        //if (usuario != null) {
+          //  tvUsuario.setText("Usuario: " + usuario);
+        //} else {
+          //  tvUsuario.setText("Usuario: Invitado");
+       // }
 
 
         Button btnSeguidos = findViewById(R.id.seguidos);
