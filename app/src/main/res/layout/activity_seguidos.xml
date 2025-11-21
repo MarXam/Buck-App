@@ -27,7 +27,7 @@
 
     <Button
         android:id="@+id/btnVolverSeguidos"
-        style="@style/boton_gradiente"
+        style="@style/ButtomBotonBasicoInvertido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver al Perfil"

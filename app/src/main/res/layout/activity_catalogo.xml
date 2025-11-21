@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/button11"
-        style="@style/boton_gradiente"
+        style="@style/ButtomBotonBasicoInvertido"
         android:layout_width="114dp"
         android:layout_height="50dp"
         android:layout_marginStart="19dp"
@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/button12"
-        style="@style/boton_gradiente"
+        style="@style/ButtomBotonBasicoInvertido"
         android:layout_width="114dp"
         android:layout_height="50dp"
         android:layout_marginEnd="11dp"

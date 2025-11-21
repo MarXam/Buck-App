@@ -72,6 +72,7 @@
         android:clipToPadding="false"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
