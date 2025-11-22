@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.marxam.buck.R;
-
-public class seguidosactivity extends AppCompatActivity {
+public class SeguidosActivity extends AppCompatActivity {
     private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6;
 
     @Override

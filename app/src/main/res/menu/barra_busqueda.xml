@@ -9,6 +9,10 @@
         android:icon="@drawable/icon_lupa"
         android:title="Buscar"/>
     <item
+        android:id="@+id/bmTienda"
+        android:icon="@drawable/icon_lupa"
+        android:title="Tienda"/>
+    <item
         android:id="@+id/bmPerfil"
         android:icon="@drawable/icon_person"
         android:title="Perfil"/>

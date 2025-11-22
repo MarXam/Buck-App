@@ -30,6 +30,10 @@ public class BarraNavegacionHelper {
                     activity.startActivity(new Intent(activity, PerfilActivity.class));
                     activity.overridePendingTransition(0, 0);
                     return true;
+                } else if (id == R.id.bmTienda && selectedItemId != R.id.bmTienda) {
+                    activity.startActivity(new Intent(activity, GeoActivity.class));
+                    activity.overridePendingTransition(0, 0);
+                    return true;
                 }
                 return false;
             }

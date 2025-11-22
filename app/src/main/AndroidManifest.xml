@@ -11,6 +11,14 @@
         android:roundIcon="@mipmap/logo_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Buck">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDOX8ihxnm__hpSWAzkOmRunizhv7aX2C0" />
+
+        <activity
+            android:name=".GeoActivity"
+            android:exported="false" />
         <activity
             android:name=".PerfilActivity"
             android:exported="false" />
@@ -22,6 +30,15 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AjustesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeguidosActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

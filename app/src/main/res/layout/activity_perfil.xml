@@ -70,6 +70,7 @@
             android:id="@+id/imgPerfil"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:contentDescription="Imagen de perfil"
             android:src="@drawable/ruroni_kenshin"
             android:layout_marginEnd="15dp"
             android:scaleType="centerCrop"
@@ -116,43 +117,50 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:orientation="vertical"
-        android:padding="10dp"
-        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toTopOf="@+id/bnBarraMenu"
         app:layout_constraintTop_toBottomOf="@+id/vSeparadorTitutloSubtitulo2"
         >
 
         <Button
-            android:id="@+id/seguidos"
+            android:id="@+id/btSeguidos"
             style="@style/ButtomBotonBasicoInvertido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Seguidos"
+            android:layout_marginVertical="10dp"
+            android:text="@string/btseguidos"
             android:textColor="@color/titulo_buck"
             />
 
         <Button
-            android:id="@+id/historial"
+            android:id="@+id/btHistorial"
             style="@style/ButtomBotonBasicoInvertido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Seguidos"
+            android:layout_marginVertical="10dp"
+            android:text="@string/btHistorial"
             android:textColor="@color/titulo_buck"/>
 
         <Button
-            android:id="@+id/ajustes"
+            android:id="@+id/btAjustes"
             style="@style/ButtomBotonBasicoInvertido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Seguidos"
+            android:layout_marginVertical="10dp"
+            android:text="@string/btAjustes"
             android:textColor="@color/titulo_buck"/>
 
         <Button
-            android:id="@+id/cerrarseccion"
+            android:id="@+id/btCerrarSesion"
             style="@style/boton_cerrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Seguidos"
+            android:layout_marginVertical="10dp"
+            android:text="@string/btCerraSesion"
             android:textColor="@color/titulo_buck"/>
 
     </LinearLayout>
@@ -161,10 +169,11 @@
         android:id="@+id/bnBarraMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/barra_busqueda"
         android:background="@color/fonfoBarraNavegacion"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvVistaManga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/barra_busqueda"
         tools:ignore="VisualLintBottomNav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

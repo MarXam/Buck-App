@@ -11,6 +11,10 @@
     <string name="tvTendencias">Tendencias</string>
     <string name="tvPerfil">Perfil</string>
     <string name="etItemRecyclerView">El increíble y larguísimo nombre del manga</string>
+    <string name="btseguidos">Seguidos</string>
+    <string name="btHistorial">Historial</string>
+    <string name="btAjustes">Ajustes</string>
+    <string name="btCerraSesion">Cerrar sesión</string>
 
 
 </resources>
